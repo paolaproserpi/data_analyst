@@ -4,23 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paola Proserpi - Data & Business Analyst Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        header h1 {
+            margin-top: 15px;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        header a {
+            color: #f8f9fa;
+            text-decoration: none;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        section h3 {
+            font-size: 2rem;
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .about, .experience, .projects {
+            margin-bottom: 50px;
+        }
+
+        .about p, .experience ul, .projects div {
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .experience ul {
+            list-style: none;
+        }
+
+        .experience li {
+            margin: 15px 0;
+            font-weight: 600;
+        }
+
+        .projects div {
+            margin-bottom: 20px;
+        }
+
+        .projects a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .projects a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="paola.jpeg" alt="Paola Proserpi" class="profile-img">
+            <img src="paola.jpeg" alt="Paola Proserpi">
             <h1>Paola Proserpi</h1>
-            <p><strong>Data Quality & Business Analyst</strong></p> <!-- Modificato per il nuovo posizionamento -->
+            <p><strong>Data & Business Analyst</strong></p>
             <p>Email: <a href="mailto:paola.proserpi@gmail.com">paola.proserpi@gmail.com</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/paola-proserpi-96984532/" target="_blank">linkedin.com/in/paola-proserpi</a></p>
         </div>
     </header>
-    <section id="about" class="container">
+
+    <section id="about" class="container about">
         <h3>About Me</h3>
         <p>With extensive experience in data quality analysis and business intelligence, I specialize in optimizing data accuracy, validation, and visualization. My expertise spans across Cloud SQL, machine learning for data management, and semantic integration. I have worked in international teams ensuring high standards in data curation and quality assurance.</p>
     </section>
-    <section id="experience" class="container">
+
+    <section id="experience" class="container experience">
         <h3>Professional Experience</h3>
         <ul>
             <li><strong>Data Quality Analyst</strong> - Upwork (2014 - Present)</li>
@@ -29,25 +138,22 @@
             <li><strong>University Teacher</strong> - Florence University of the Arts (2006 - 2012)</li>
         </ul>
     </section>
-    <section id="projects" class="container">
+
+    <section id="projects" class="container projects">
         <h3>Data Analysis Projects</h3>
-        <div class="project">
-            <img src="project1.jpg" alt="Project 1">
+        <div>
             <p><a href="https://www.kaggle.com/code/yschii/progetto-data-intensive" target="_blank">Progetto Data Intensive</a> - Exploratory data analysis on marketing campaigns.</p>
         </div>
-        <div class="project">
-            <img src="project2.jpg" alt="Project 2">
+        <div>
             <p><a href="https://www.kaggle.com/code/emavirg/dataspaces-tesina-e-v" target="_blank">DataSpaces: Tesina E.V.</a> - Data visualization and EDA techniques.</p>
         </div>
-        <div class="project">
-            <img src="project3.jpg" alt="Project 3">
+        <div>
             <p><a href="https://arxiv.org/abs/2008.07779" target="_blank">Predicting Future Sales of Retail Products</a> - Machine learning techniques like XGBoost and LSTM for sales forecasting.</p>
         </div>
     </section>
+
     <footer>
         <p>&copy; 2024 Paola Proserpi</p>
     </footer>
 </body>
 </html>
-
-
